@@ -10,6 +10,6 @@ do
     if [ -d "build" ]; then
         rm -r build
     fi
-    python setup.py build_ext --inplace
+    python3 setup.py build_ext --inplace
     cd $ROOT_DIR
 done

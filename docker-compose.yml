@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  pointmvsnet:
+    image: mchobby/point-mvsnet
+    stdin_open: true
+    tty: true
+    shm_size: 32gb
+    container_name: pointmvsnet
+    network_mode: bridge
+    volumes:
+      - .:/PointMVSNet
+      - /data:/data
+      - /windows:/windows
+    restart: always
